@@ -18,11 +18,5 @@ namespace ModFrame
             harmony = new(ModGUID);
             harmony.PatchAll(assembly);
         }
-        
-        
-        public void OnDestroy()
-        {
-            harmony.UnpatchSelf();
-        }
     }
 }
